@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechSahayog | Technology That Serves Humanity</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>TS</span>
+        <div>
+            <strong>TechSahayog</strong>
+            <small>Technology • Community • Humanity</small>
+        </div>
+    </div>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#problems">Problems</a>
+        <a href="#programs">Programs</a>
+        <a href="#help">Get Help</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <button onclick="toggleLanguage()">हिंदी</button>
+        <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="tagline">💚 COMMUNITY • TECHNOLOGY • IMPACT</p>
+
+        <h1>
+            Technology that
+            <span>serves humanity.</span>
+        </h1>
+
+        <p>
+            TechSahayog connects NGOs, volunteers, donors and people
+            who need support — all through one simple digital platform.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn"
+                    onclick="scrollToSection('help')">
+                🆘 I Need Help
+            </button>
+
+            <button class="secondary-btn"
+                    onclick="scrollToSection('volunteer')">
+                🤝 Become a Volunteer
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="floating-card">
+            <span>❤️</span>
+            <div>
+                <strong>Community First</strong>
+                <small>Every action creates impact.</small>
+            </div>
+        </div>
+
+        <div class="floating-card">
+            <span>🤝</span>
+            <div>
+                <strong>Connect & Help</strong>
+                <small>Bringing people together.</small>
+            </div>
+        </div>
+
+        <div class="floating-card">
+            <span>🌱</span>
+            <div>
+                <strong>Create Change</strong>
+                <small>Small actions matter.</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUICK ACTIONS ================= -->
+
+<section class="quick-actions">
+
+    <div onclick="scrollToSection('help')">
+        <span>🆘</span>
+        <h3>Get Help</h3>
+        <p>Submit a support request</p>
+    </div>
+
+    <div onclick="scrollToSection('volunteer')">
+        <span>🤝</span>
+        <h3>Volunteer</h3>
+        <p>Join our community</p>
+    </div>
+
+    <div onclick="scrollToSection('donate')">
+        <span>💰</span>
+        <h3>Donate</h3>
+        <p>Support a cause</p>
+    </div>
+
+    <div onclick="scrollToSection('member')">
+        <span>👤</span>
+        <h3>Become a Member</h3>
+        <p>Join TechSahayog</p>
+    </div>
+
+</section>
+
+
+<!-- ================= PROBLEM SECTION ================= -->
+
+<section id="problems" class="section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">THE PROBLEM</p>
+
+        <h2>
+            Problems in the community
+            <span>we want to solve.</span>
+        </h2>
+
+        <p>
+            NGOs and communities often face communication,
+            coordination and accessibility problems.
+            TechSahayog brings these solutions together.
+        </p>
+
+    </div>
+
+
+    <div class="problem-grid">
+
+        <div class="problem-card">
+
+            <span>📢</span>
+
+            <h3>Lack of Online Presence</h3>
+
+            <p>
+                NGOs often don't have one place to showcase
+                their activities, projects and achievements.
+            </p>
+
+            <strong>→ Solution: Digital NGO platform</strong>
+
+        </div>
+
+
+        <div class="problem-card">
+
+            <span>👥</span>
+
+            <h3>Volunteer Management</h3>
+
+            <p>
+                Volunteer information can be scattered across
+                registers, spreadsheets and messaging apps.
+            </p>
+
+            <strong>→ Solution: Online volunteer registration</strong>
+
+        </div>
+
+
+        <div class="problem-card">
+
+            <span>🆘</span>
+
+            <h3>People Don't Know Where to Ask for Help</h3>
+
+            <p>
+                People may not know whom to contact when they
+                need educational, financial or community support.
+            </p>
+
+            <strong>→ Solution: Get Help system</strong>
+
+        </div>
+
+
+        <div class="problem-card">
+
+            <span>💰</span>
+
+            <h3>Donation Accessibility</h3>
+
+            <p>
+                Donors need an easy way to understand causes
+                and contribute towards community projects.
+            </p>
+
+            <strong>→ Solution: Digital donation interface</strong>
+
+        </div>
+
+
+        <div class="problem-card">
+
+            <span>📅</span>
+
+            <h3>Scattered Events</h3>
+
+            <p>
+                Community events can be difficult to discover
+                and register for.
+            </p>
+
+            <strong>→ Solution: Central event section</strong>
+
+        </div>
+
+
+        <div class="problem-card">
+
+            <span>🔗</span>
+
+            <h3>Volunteers & People Are Disconnected</h3>
+
+            <p>
+                People willing to help and people requiring
+                support need a common platform.
+            </p>
+
+            <strong>→ Solution: Community matching</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= IMPACT ================= -->
+
+<section class="impact">
+
+    <div>
+        <span id="peopleCount">0</span>+
+        <p>People Reached</p>
+    </div>
+
+    <div>
+        <span id="volunteerCount">0</span>+
+        <p>Volunteers</p>
+    </div>
+
+    <div>
+        <span id="eventCount">0</span>+
+        <p>Community Events</p>
+    </div>
+
+    <div>
+        <span id="helpCount">0</span>+
+        <p>People Supported</p>
+    </div>
+
+</section>
+
+
+<!-- ================= PROGRAMS ================= -->
+
+<section id="programs" class="section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">OUR PROGRAMS</p>
+
+        <h2>Where we create <span>impact</span></h2>
+
+    </div>
+
+
+    <div class="program-grid">
+
+        <article class="program-card">
+
+            <div class="program-icon">📚</div>
+
+            <h3>Education Support</h3>
+
+            <p>
+                Help students access learning resources,
+                mentoring and educational opportunities.
+            </p>
+
+            <button onclick="showProgram('Education Support')">
+                Learn More →
+            </button>
+
+        </article>
+
+
+        <article class="program-card">
+
+            <div class="program-icon">💻</div>
+
+            <h3>Digital Literacy</h3>
+
+            <p>
+                Help communities learn basic digital skills
+                and access technology.
+            </p>
+
+            <button onclick="showProgram('Digital Literacy')">
+                Learn More →
+            </button>
+
+        </article>
+
+
+        <article class="program-card">
+
+            <div class="program-icon">🌱</div>
+
+            <h3>Environment</h3>
+
+            <p>
+                Organize plantation drives, cleanliness
+                campaigns and environmental awareness.
+            </p>
+
+            <button onclick="showProgram('Environment')">
+                Learn More →
+            </button>
+
+        </article>
+
+
+        <article class="program-card">
+
+            <div class="program-icon">🍱</div>
+
+            <h3>Community Welfare</h3>
+
+            <p>
+                Support families and communities with
+                essential resources.
+            </p>
+
+            <button onclick="showProgram('Community Welfare')">
+                Learn More →
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GET HELP ================= -->
+
+<section id="help" class="feature-section">
+
+    <div class="feature-text">
+
+        <p class="eyebrow">COMMUNITY SUPPORT</p>
+
+        <h2>
+            Need help?
+            <span>We're here.</span>
+        </h2>
+
+        <p>
+            Submit your requirement through our support form.
+            Your request can be reviewed and connected with
+            an appropriate volunteer or NGO team.
+        </p>
+
+        <div class="help-flow">
+
+            <span>1️⃣ Submit Request</span>
+            <span>→</span>
+            <span>2️⃣ NGO Reviews</span>
+            <span>→</span>
+            <span>3️⃣ Volunteer Connected</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="form-card">
+
+        <h3>🆘 Request Community Support</h3>
+
+        <form id="helpForm">
+
+            <input
+                type="text"
+                id="helpName"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="tel"
+                id="helpPhone"
+                placeholder="Phone Number"
+                required
+            >
+
+            <select id="helpType" required>
+
+                <option value="">
+                    Select type of support
+                </option>
+
+                <option>Education</option>
+                <option>Food / Basic Needs</option>
+                <option>Financial Support</option>
+                <option>Community Support</option>
+                <option>Digital Assistance</option>
+
+            </select>
+
+
+            <select id="urgency" required>
+
+                <option value="">
+                    Select urgency
+                </option>
+
+                <option>Normal</option>
+                <option>Important</option>
+                <option>Urgent</option>
+
+            </select>
+
+
+            <textarea
+                id="helpMessage"
+                placeholder="Describe what help you need..."
+                required>
+            </textarea>
+
+
+            <button class="primary-btn" type="submit">
+                Submit Help Request
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= VOLUNTEER ================= -->
+
+<section id="volunteer" class="section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">JOIN THE MOVEMENT</p>
+
+        <h2>Become a <span>Volunteer</span></h2>
+
+        <p>
+            Your time, skills and energy can help create
+            meaningful change.
+        </p>
+
+    </div>
+
+
+    <div class="form-card centered-form">
+
+        <form id="volunteerForm">
+
+            <div class="two-inputs">
+
+                <input
+                    type="text"
+                    id="volunteerName"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="volunteerEmail"
+                    placeholder="Email Address"
+                    required
+                >
+
+            </div>
+
+
+            <div class="two-inputs">
+
+                <input
+                    type="tel"
+                    id="volunteerPhone"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <select id="volunteerSkill" required>
+
+                    <option value="">
+                        Select your skill
+                    </option>
+
+                    <option>Teaching</option>
+                    <option>Technology</option>
+                    <option>Event Management</option>
+                    <option>Social Media</option>
+                    <option>Fundraising</option>
+                    <option>Other</option>
+
+                </select>
+
+            </div>
+
+
+            <textarea
+                id="volunteerReason"
+                placeholder="Why do you want to volunteer?"
+                required>
+            </textarea>
+
+
+            <button class="primary-btn" type="submit">
+                Join as Volunteer 🤝
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MEMBER ================= -->
+
+<section id="member" class="feature-section reverse">
+
+    <div class="feature-text">
+
+        <p class="eyebrow">MEMBERSHIP</p>
+
+        <h2>
+            Become a
+            <span>TechSahayog Member.</span>
+        </h2>
+
+        <p>
+            Create a digital community identity and
+            participate in NGO programs and activities.
+        </p>
+
+        <ul class="check-list">
+
+            <li>✓ Digital Member ID</li>
+            <li>✓ Access to community events</li>
+            <li>✓ Volunteer opportunities</li>
+            <li>✓ Participation certificates</li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="form-card">
+
+        <h3>👤 Member Registration</h3>
+
+        <form id="memberForm">
+
+            <input
+                type="text"
+                id="memberName"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="memberEmail"
+                placeholder="Email"
+                required
+            >
+
+            <input
+                type="tel"
+                id="memberPhone"
+                placeholder="Phone"
+                required
+            >
+
+            <select id="memberInterest" required>
+
+                <option value="">
+                    Area of Interest
+                </option>
+
+                <option>Education</option>
+                <option>Environment</option>
+                <option>Digital Literacy</option>
+                <option>Community Welfare</option>
+
+            </select>
+
+
+            <button class="primary-btn" type="submit">
+                Register as Member
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DONATION ================= -->
+
+<section id="donate" class="donation-section">
+
+    <div>
+
+        <p class="eyebrow">SUPPORT A CAUSE</p>
+
+        <h2>
+            Your contribution can
+            <span>create change.</span>
+        </h2>
+
+        <p>
+            Every contribution helps us support community
+            initiatives and social programs.
+        </p>
+
+    </div>
+
+
+    <div class="donation-card">
+
+        <h3>💰 Make a Donation</h3>
+
+        <div class="amounts">
+
+            <button onclick="selectDonation(100)">₹100</button>
+            <button onclick="selectDonation(500)">₹500</button>
+            <button onclick="selectDonation(1000)">₹1,000</button>
+            <button onclick="selectDonation(2000)">₹2,000</button>
+
+        </div>
+
+
+        <input
+            type="number"
+            id="customDonation"
+            placeholder="Enter custom amount ₹"
+            min="1"
+        >
+
+
+        <button
+            class="primary-btn full"
+            onclick="donate()">
+
+            Donate Now ❤️
+
+        </button>
+
+        <small>
+            Demo payment interface — connect a real
+            payment gateway in the backend.
+        </small>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EVENTS ================= -->
+
+<section id="events" class="section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">GET INVOLVED</p>
+
+        <h2>Upcoming <span>Events</span></h2>
+
+    </div>
+
+
+    <div class="event-grid">
+
+
+        <article class="event-card">
+
+            <div class="event-date">
+                <strong>15</strong>
+                <span>SEP</span>
+            </div>
+
+            <div>
+
+                <h3>Community Clean-Up Drive</h3>
+
+                <p>📍 Gurgaon</p>
+
+                <p>
+                    Join volunteers for a community
+                    cleanliness initiative.
+                </p>
+
+                <button onclick="registerEvent('Community Clean-Up Drive')">
+                    Register
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="event-card">
+
+            <div class="event-date">
+                <strong>22</strong>
+                <span>SEP</span>
+            </div>
+
+            <div>
+
+                <h3>Digital Literacy Workshop</h3>
+
+                <p>📍 Delhi</p>
+
+                <p>
+                    Learn and teach essential digital
+                    skills to the community.
+                </p>
+
+                <button onclick="registerEvent('Digital Literacy Workshop')">
+                    Register
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="event-card">
+
+            <div class="event-date">
+                <strong>02</strong>
+                <span>OCT</span>
+            </div>
+
+            <div>
+
+                <h3>Education Support Camp</h3>
+
+                <p>📍 Gurgaon</p>
+
+                <p>
+                    Support students with educational
+                    resources and mentoring.
+                </p>
+
+                <button onclick="registerEvent('Education Support Camp')">
+                    Register
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CERTIFICATE ================= -->
+
+<section class="certificate-section">
+
+    <div>
+
+        <p class="eyebrow">DIGITAL CERTIFICATES</p>
+
+        <h2>
+            Verify your
+            <span>certificate.</span>
+        </h2>
+
+        <p>
+            Enter your certificate ID to verify
+            participation in TechSahayog activities.
+        </p>
+
+    </div>
+
+
+    <div class="certificate-box">
+
+        <input
+            type="text"
+            id="certificateId"
+            placeholder="Example: TS-2026-001"
+        >
+
+        <button
+            class="primary-btn"
+            onclick="verifyCertificate()">
+
+            Verify Certificate
+
+        </button>
+
+        <div id="certificateResult"></div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">OUR WORK</p>
+
+        <h2>Making an <span>impact.</span></h2>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <div onclick="showGallery('Education Support')">
+            📚
+            <span>Education</span>
+        </div>
+
+        <div onclick="showGallery('Volunteer Drive')">
+            🤝
+            <span>Volunteers</span>
+        </div>
+
+        <div onclick="showGallery('Environment Drive')">
+            🌱
+            <span>Environment</span>
+        </div>
+
+        <div onclick="showGallery('Community Welfare')">
+            🍱
+            <span>Community Welfare</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="section faq-section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">FAQ</p>
+
+        <h2>Frequently asked <span>questions.</span></h2>
+
+    </div>
+
+
+    <div class="faq">
+
+        <div class="faq-item">
+
+            <button onclick="toggleFAQ(this)">
+                How can I become a volunteer?
+                <span>+</span>
+            </button>
+
+            <p>
+                Fill out the volunteer registration form.
+                The NGO team can review your application
+                and contact you.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button onclick="toggleFAQ(this)">
+                How can I request help?
+                <span>+</span>
+            </button>
+
+            <p>
+                Use the Get Help section and submit
+                your support requirement.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button onclick="toggleFAQ(this)">
+                Can I donate online?
+                <span>+</span>
+            </button>
+
+            <p>
+                The current frontend contains a donation
+                interface. A real payment gateway can be
+                connected through the backend.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-section">
+
+    <div>
+
+        <p class="eyebrow">CONTACT</p>
+
+        <h2>Let's create change <span>together.</span></h2>
+
+        <p>
+            Have a question, partnership idea or
+            community initiative?
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div onclick="contactAction('phone')">
+            📞
+            <strong>Call Us</strong>
+            <span>+91 98765 43210</span>
+        </div>
+
+        <div onclick="contactAction('whatsapp')">
+            💬
+            <strong>WhatsApp</strong>
+            <span>Chat with us</span>
+        </div>
+
+        <div onclick="contactAction('email')">
+            ✉️
+            <strong>Email</strong>
+            <span>hello@techsahayog.org</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        <strong>TechSahayog</strong>
+        <p>Technology that serves humanity.</p>
+    </div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#problems">Problems</a>
+        <a href="#programs">Programs</a>
+        <a href="#help">Get Help</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 TechSahayog. Community Service Project.
+    </p>
+
+</footer>
+
+
+<!-- TOAST -->
+
+<div id="toast"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
