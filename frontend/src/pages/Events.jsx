@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 function Events() {
@@ -7,101 +8,198 @@ function Events() {
     {
       title: "Education Support Camp",
       icon: "📚",
+      image: "/images/children-activities.jpg",
+      category: "Learning Support",
       description:
-        "Community education and student support initiative.",
+        "Supporting children with learning guidance and educational resources.",
       details:
-        "This event provides educational support, learning resources and guidance to students from the community."
+        "This initiative focuses on providing educational guidance and learning support to children from underprivileged and low-income families."
     },
     {
-      title: "Community Clean-Up Drive",
-      icon: "🌱",
+      title: "Girls' Education Awareness Drive",
+      icon: "👧",
+      image: "/images/school-building.jpg",
+      category: "Girls' Education",
       description:
-        "Community participation for a cleaner environment.",
+        "Creating awareness about the importance of girls' education.",
       details:
-        "This activity encourages community members and volunteers to work together to maintain a cleaner and healthier environment."
+        "This activity promotes awareness about equal educational opportunities and encourages families and communities to support girls in continuing their education."
     },
     {
-      title: "Digital Literacy Workshop",
+      title: "Learning Material Distribution",
+      icon: "🎒",
+      image: "/images/book-distribution.jpg",
+      category: "Educational Resources",
+      description:
+        "Helping children access essential learning materials.",
+      details:
+        "This initiative focuses on supporting children with educational resources such as books, school supplies and other learning materials."
+    },
+    {
+      title: "Community Teaching Session",
+      icon: "👩‍🏫",
+      image: "/images/children-activities.jpg",
+      category: "Volunteering",
+      description:
+        "Volunteers supporting children through teaching and learning.",
+      details:
+        "Community teaching sessions provide children with additional academic guidance and learning support with the participation of volunteers."
+    },
+    {
+      title: "Digital Learning Workshop",
       icon: "💻",
+      image: "/images/school-building.jpg",
+      category: "Digital Education",
       description:
-        "Promoting essential digital skills in the community.",
+        "Introducing children to digital learning opportunities.",
       details:
-        "This workshop introduces basic digital skills and helps community members become more comfortable using digital technologies."
+        "This workshop focuses on helping children become familiar with digital learning tools and encouraging the use of technology for education."
+    },
+    {
+      title: "Education Awareness Program",
+      icon: "🌱",
+      image: "/images/uniform-distribution.jpg",
+      category: "Community Awareness",
+      description:
+        "Encouraging families and communities to value education.",
+      details:
+        "This program focuses on spreading awareness about the importance of education and encouraging children to continue their learning journey."
     }
   ];
 
   return (
-    <section className="page">
+    <section className="events-page">
 
-      <p className="eyebrow">
-        NGO ACTIVITIES
-      </p>
+      {/* HERO */}
+      <div className="events-hero">
+        <div className="events-hero-content">
+          <p className="eyebrow">HAR GHAR SHIKSHA</p>
 
-      <h1>
-        Events & <span>Activities.</span>
-      </h1>
+          <h1>
+            Learning today,
+            <span> leading tomorrow.</span>
+          </h1>
 
-      <div className="cards">
+          <p>
+            Explore educational initiatives and community activities
+            focused on creating better learning opportunities for
+            children and promoting girls' education.
+          </p>
+        </div>
 
-        {events.map((event, index) => (
-
-          <div className="card" key={index}>
-
-            <div className="icon">
-              {event.icon}
-            </div>
-
-            <h3>
-              {event.title}
-            </h3>
-
-            <p>
-              {event.description}
-            </p>
-
-            <button
-              className="btn secondary"
-              onClick={() => setSelectedEvent(event)}
-            >
-              View Details
-            </button>
-
-          </div>
-
-        ))}
-
+        <div className="events-hero-image">
+          <img
+            src="/images/children-activities.jpg"
+            alt="Children taking part in learning activities"
+          />
+        </div>
       </div>
 
-      {/* Event Details Popup */}
+      {/* EVENTS INTRO */}
+      <div className="events-heading">
+        <p className="eyebrow">OUR INITIATIVES</p>
+        <h2>Explore Our Activities</h2>
+        <p>
+          Discover different ways to encourage education,
+          participation and community support.
+        </p>
+      </div>
 
-      {selectedEvent && (
-        <div className="event-overlay">
-
-          <div className="event-modal">
-
-            <div className="icon">
-              {selectedEvent.icon}
+      {/* EVENT CARDS */}
+      <div className="events-grid">
+        {events.map((event, index) => (
+          <article className="events-card" key={index}>
+            <div className="events-card-image">
+              <img src={event.image} alt={event.title} />
+              <span className="events-card-icon">{event.icon}</span>
             </div>
 
-            <h2>
-              {selectedEvent.title}
-            </h2>
+            <div className="events-card-content">
+              <span className="events-category">{event.category}</span>
 
-            <p>
-              {selectedEvent.details}
-            </p>
+              <h3>{event.title}</h3>
 
+              <p>{event.description}</p>
+
+              <button
+                type="button"
+                className="events-details-btn"
+                onClick={() => setSelectedEvent(event)}
+              >
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      {/* DETAILS POPUP */}
+      {selectedEvent && (
+        <div
+          className="events-overlay"
+          onClick={() => setSelectedEvent(null)}
+        >
+          <div
+            className="events-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="event-modal-title"
+            onClick={(e) => e.stopPropagation()}
+          >
             <button
-              className="btn"
+              type="button"
+              className="events-close"
               onClick={() => setSelectedEvent(null)}
+              aria-label="Close event details"
             >
-              Close
+              ×
             </button>
 
-          </div>
+            <img
+              className="events-modal-image"
+              src={selectedEvent.image}
+              alt={selectedEvent.title}
+            />
 
+            <div className="events-modal-content">
+              <span className="events-modal-icon">
+                {selectedEvent.icon}
+              </span>
+
+              <p className="eyebrow">{selectedEvent.category}</p>
+
+              <h2 id="event-modal-title">{selectedEvent.title}</h2>
+
+              <p>{selectedEvent.details}</p>
+
+              <button
+                type="button"
+                className="events-modal-btn"
+                onClick={() => setSelectedEvent(null)}
+              >
+                Close Details
+              </button>
+            </div>
+          </div>
         </div>
       )}
+
+      {/* BOTTOM BANNER */}
+      <div className="events-banner">
+        <img
+          src="/images/book-distribution.jpg"
+          alt="Books for children's education"
+        />
+
+        <div>
+          <p className="eyebrow">BE A PART OF THE CHANGE</p>
+          <h2>Every learning opportunity matters.</h2>
+          <p>
+            Interested in contributing? Join our volunteer community
+            and support the cause of education.
+          </p>
+        </div>
+      </div>
 
     </section>
   );

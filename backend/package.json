@@ -1,0 +1,12 @@
+
+{
+  "name": "har-ghar-shiksha-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Har Ghar Shiksha NGO website",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  }
+}
